@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  background-color: #0A192F; /* Azul oscuro elegante */
+  color: #E0E0E0; /* Texto claro para contraste */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pagina-principal {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.servicios {
+  margin-bottom: 40px;
+}
+
+.servicios ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.nosotros {
+  text-align: center;
+}
+
+.fundadores {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.persona img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.persona p {
+  margin-top: 10px;
+}
