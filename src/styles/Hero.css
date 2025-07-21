@@ -1,33 +1,66 @@
 .hero {
   position: relative;
-  background-color: #0A192F; /* Azul oscuro elegante */
-  color: #E0E0E0;
-  padding: 100px 20px;
-  text-align: center;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
   overflow: hidden;
+  background-color: #111; /* Fondo oscuro para elegancia */
 }
 
 .hero::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image:
-    linear-gradient(to bottom, rgba(214, 222, 233, 0.9), rgba(194, 201, 211, 0.95)),
-    url('/Boldsites.png');
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('/public/Boldsites.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  filter: blur(12px);  /* Más blur = más elegancia */
-  opacity: 0.12;       /* Suficiente para que no distraiga */
+  opacity: 0.15; /* baja opacidad para que no distraiga */
+  filter: blur(4px); /* suaviza bordes y líneas */
   z-index: 0;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.9));
+  z-index: 1;
 }
 
 .hero-content {
   position: relative;
-  z-index: 1;
-  max-width: 800px;
-  margin: auto;
+  z-index: 2;
+  text-align: center;
+}
+
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #1e1e1e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #333;
 }
