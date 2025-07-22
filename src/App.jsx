@@ -1,17 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import PaginaPrincipal from './pages/PaginaPrincipal'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import PaginaPrincipal from "./pages/PaginaPrincipal";
+import ServicesPage from "./pages/ServicesPage";
+import Portafoliopage from "./pages/Portafoliopage";
+import Aboutpage from "./pages/Aboutpage";
+import Paginacontact from "./pages/Paginacontact";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <PaginaPrincipal/>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<PaginaPrincipal />} />
+          <Route path="/servicios" element={<ServicesPage />} />
+          <Route path="/portafolio" element={<Portafoliopage />} />
+          <Route path="/nosotros" element={<Aboutpage />} />
+          <Route path="/contacto" element={<Paginacontact />} />
+        </Route>
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

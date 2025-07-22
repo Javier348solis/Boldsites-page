@@ -1,11 +1,13 @@
-import React from 'react';
-import '/src/styles/paginaprincipal.css';
-import Hero from '../components/Hero';
+import Hero from "../components/Hero";
+import photoJavier from "../assets/photo_Javier_white.jpg";
+import photoNaomy from "../assets/photo_naomy.jpg";
+import "/src/styles/paginaprincipal.css";
 
 function PaginaPrincipal() {
   return (
     <div className="pagina-principal">
-      <Hero/>
+      <Hero />
+
       <header className="header">
         <h1>Bienvenidos a Boldsites</h1>
         <p>Transformamos ideas en sitios web impactantes.</p>
@@ -25,12 +27,20 @@ function PaginaPrincipal() {
         <h2>Sobre nosotros</h2>
         <div className="fundadores">
           <div className="persona">
-            <img src="../src/assets/photo_Javier_white.jpg" alt="Javier" />
-            <p>Javier Solís<br />Desarrollador Full-Stack web</p>
+            <img src={photoJavier} alt="Javier Solís" />
+            <p>
+              Javier Solís
+              <br />
+              Desarrollador Full-Stack web
+            </p>
           </div>
           <div className="persona">
-            <img src="../src/assets/photo_naomy.jpg" alt="Socio" />
-            <p>Naomy Sandi<br />Desarrollador Full-Stack web</p>
+            <img src={photoNaomy} alt="Naomy Sandi" />
+            <p>
+              Naomy Sandi
+              <br />
+              Desarrollador Full-Stack web
+            </p>
           </div>
         </div>
       </section>
