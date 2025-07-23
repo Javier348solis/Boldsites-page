@@ -1,13 +1,12 @@
+import "../styles/footer.css";
 
-import React from 'react'
-
-function Footer() {
+export default function Footer() {
   return (
-    
-   <footer className='bg-gray-800 text-gray-400 text-center p-4'>
-    ©{new Date().getFullYear()} Boldsites. Todos los derechos reservados.
-   </footer>
-  )
+    <footer className="footer">
+      <div className="footer-container">
+        <p>© {new Date().getFullYear()} Boldsites – Todos los derechos reservados</p>
+        <p>San José, Costa Rica</p>
+      </div>
+    </footer>
+  );
 }
-
-export default Footer

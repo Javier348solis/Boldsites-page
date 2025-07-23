@@ -1,16 +1,22 @@
 import { Link } from "react-router-dom";
-import "/src/styles/Navbar.css";
+import "../styles/navbar.css";
 
 export default function Navbar() {
   return (
-    <nav className="bg-gray-900 text-white p-4 flex justify-between items-center">
-      <Link to="/" className="text-xl font-bold">Boldsites</Link>
-      <div className="space-x-4">
-        <Link to="/">Inicio</Link>
-        <Link to="/servicios">Servicios</Link>
-        <Link to="/portafolio">Portafolio</Link>
-        <Link to="/nosotros">Nosotros</Link>
-        <Link to="/contacto">Contacto</Link>
+    <nav className="navbar">
+      <div className="navbar-container">
+        <div className="navbar-logo">
+          <Link to="/">Boldsites</Link>
+        </div>
+        <input type="checkbox" id="menu-toggle" />
+        <label htmlFor="menu-toggle" className="menu-icon">☰</label>
+        <ul className="navbar-links">
+          <li><Link to="/">Inicio</Link></li>
+          <li><Link to="/servicios">Servicios</Link></li>
+          <li><Link to="/portafolio">Portafolio</Link></li>
+          <li><Link to="/nosotros">Nosotros</Link></li>
+          <li><Link to="/contacto">Contacto</Link></li>
+        </ul>
       </div>
     </nav>
   );

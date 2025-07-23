@@ -1,0 +1,22 @@
+.footer {
+  background-color: #0d0d0d; /* mismo color que navbar */
+  color: white;
+  padding: 1.5rem 1rem;
+  width: 100%;
+}
+
+.footer-container {
+  max-width: 1200px; /* mismo ancho que el contenido principal */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.3rem;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
