@@ -1,7 +1,7 @@
 import React from 'react';
 import '/src/styles/paginaprincipal.css';
 import Hero from '../components/Hero';
-import Footer from '../components/Footer';
+
 
 function PaginaPrincipal() {
   return (
@@ -44,7 +44,7 @@ function PaginaPrincipal() {
             </div>
           </div>
         </div>
-        <Footer/>
+    
       </section>
     </div>
   );

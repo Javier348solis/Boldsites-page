@@ -16,13 +16,21 @@
   align-items: center;
 }
 
-.navbar-logo a {
-  color: #1e90ff;
-  font-size: 1.8rem;
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
   text-decoration: none;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
+.navbar-logo img {
+  height: 40px;
+}
+
+/* Links */
 .navbar-links {
   list-style: none;
   display: flex;
@@ -41,7 +49,7 @@
   color: #1e90ff;
 }
 
-/* Menu responsive */
+/* Toggle móvil */
 .menu-icon {
   display: none;
   font-size: 1.8rem;
@@ -72,3 +80,4 @@
     display: block;
   }
 }
+ 
