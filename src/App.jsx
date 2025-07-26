@@ -3,8 +3,9 @@ import Layout from "./components/Layout";
 import PaginaPrincipal from "./pages/PaginaPrincipal";
 import ServicesPage from "./pages/ServicesPage";
 import Portafoliopage from "./pages/Portafoliopage";
-import Aboutpage from "./pages/Aboutpage";
+import Nosotros from "./components/Nosotros"
 import Paginacontact from "./pages/Paginacontact";
+
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
           <Route path="/" element={<PaginaPrincipal />} />
           <Route path="/servicios" element={<ServicesPage />} />
           <Route path="/portafolio" element={<Portafoliopage />} />
-          <Route path="/nosotros" element={<Aboutpage />} />
+        
           <Route path="/contacto" element={<Paginacontact />} />
+           <Route path="/Nosotros" element={<Nosotros />} />
         </Route>
       </Routes>
     </Router>
